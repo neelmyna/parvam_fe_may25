@@ -1,0 +1,120 @@
+Day1 Friday 02-05-2025
+
+Start with Introduction
+	Parvam Company
+	Trainer + Co trainer
+	what is this training
+	why this training
+	Outcome of the training
+Day1 content
+
+Session1:
+APP INSTALLATIONS:
+Mozilla Firefox Browser
+git
+vs code (emmet, live server)
+node
+
+GIT:
+Github Account Creation
+Creating new Repo (public)
+PAT creation (In the big list, select the 1st check box named REPO)
+Students must mail the PAT to themselves (do not save the PAT any where else)
+
+For use of Git, learn from:
+
+https://www.youtube.com/watch?v=h5Xr9_L4x7M&t=2s
+
+https://www.youtube.com/watch?v=Yt1whvpWMU0&t=22s
+
+https://www.youtube.com/watch?v=EWttNzNBqBc&t=8s
+
+
+NOTE: The trainer repo folder and student repo folder must be side by side inside the learning folder.
+
+$ git add .
+Stage All Changes
+
+$ git commit -m "p5 and p6 added"
+Give a message and Click Commit
+
+$ git push origin main
+Click Sync
+
+CONFIGURATION COMMANDS:
+
+git config --global user.name ""
+git config --global user.email ""
+---------------------------------------
+10 mins of Theory
+
+draw.io
+app.diagrams.net
+
+What is HTML (developer.mozilla.org)
+*Types of tags
+*value vs innerHtml
+List of tags
+Structure of html code (heirarchical)
+Data/Info about the html (body)
+
+Revision
+Assessment
+Assignments
+JAM
+Q&A
+--------------------------------------
+Day2
+
+Recap
+JAM
+Q&A
+Day Agenda/Content
+
+With CSS
+Cheat Sheet
+Note: Apply CSS to the same content what you created in Day1
+*HTML5 tags
+--------------------------------------
+Day3
+
+HTML, HTML5 and CSS
+
+--------------------------
+Day4
+Start with JS
+from basics to loops, array and string problems
+Simple html programs
+add 2 numbers
+
+
+------------------
+Day5
+
+Form with JS
+--------------------------
+Day6
+ES6 features
+map, filter, reduce
+spread operator
+big arrow function
+lambda
+
+--------------------------
+Day7
+Bootstrap
+
+--------------------------
+Day8
+Bootstrap
+
+--------------------------
+Day9
+
+
+--------------------------
+Day10
+
+
+
+

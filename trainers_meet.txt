@@ -1,0 +1,27 @@
+TRAINERS MEET
+
+Strictly the given TOC must be followed.
+
+Bootstrap or Tailwind must be used in all examples starting from day4
+
+draw.io must be used to do the design and only then the code/program must implemented.
+
+Strictly industry standard look and feel, modularity, indentation, comments etc. must be followed.
+
+Dress Code
+Website Hosting
+
+Day10:
+session1: Problem statement given and students start solving the project.
+session2: Mock Interview, Viva and observe the project indentation of students.
+Final MCQ assessment
+session3:
+Project evaluation and Final feedback and closure
+Felicitation
+
+NOTE: In case if the students are asked to come to seminar hall on last session of last day, then evaluation must start from session2.
+
+Trainers must given the daywise content, examples, assignments, 
+
+Trainers must create the daywise folders in their repo only at start of session1 of that particilar day.
+
