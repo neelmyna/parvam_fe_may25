@@ -1,6 +1,7 @@
 TRAINER PREPARATION and METHODOLOGY
 
 Learn and Use draw.io
+Learn important tools from the subject UI-UX (what is important for our training)
 
 HTML-5 (Advanced) tags 
 
@@ -76,3 +77,14 @@ Trainer must have minimum 10 examples for each day.
 3 to 4 examples students will do in session3.
 3 to 4 examples students will do as home work.
 
+IMPORTANT FILES TRAINERS MUST ACCESS:
+trainer preparation text file
+daywise_schedule text file
+trainers_meet text file
+daywise material text file
+pdf file in day2 folder on html_css_bs examples
+pdf file in day4 folder on js examples
+
+Please review the day wise examples
+
+Trainer must show the day agenda to the students at beginning of session1 of each day

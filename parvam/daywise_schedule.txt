@@ -1,15 +1,16 @@
-Day1 Friday 02-05-2025
+Day1 Friday 02-05-2025 (Installations, Git, html)
 
-Start with Introduction
+Start with Introduction (15 minutes)
 	Parvam Company
 	Trainer + Co trainer
 	what is this training
-	why this training
+	why this training (Benefits)
 	Outcome of the training
 Day1 content
 
 Session1:
 APP INSTALLATIONS:
+notepad++
 Mozilla Firefox Browser
 git
 vs code (emmet, live server)
@@ -29,7 +30,6 @@ https://www.youtube.com/watch?v=Yt1whvpWMU0&t=22s
 
 https://www.youtube.com/watch?v=EWttNzNBqBc&t=8s
 
-
 NOTE: The trainer repo folder and student repo folder must be side by side inside the learning folder.
 
 $ git add .
@@ -45,11 +45,10 @@ CONFIGURATION COMMANDS:
 
 git config --global user.name ""
 git config --global user.email ""
----------------------------------------
-10 mins of Theory
 
-draw.io
-app.diagrams.net
+Session2:
+Introduce draw.io to students (app.diagrams.net)
+Create designs for day1 examples
 
 What is HTML (developer.mozilla.org)
 *Types of tags
@@ -58,48 +57,151 @@ List of tags
 Structure of html code (heirarchical)
 Data/Info about the html (body)
 
+Session3:
+implement Examples (both trainer and students)
 Revision
 Assessment
 Assignments
 JAM
 Q&A
 --------------------------------------
-Day2
+Day2 03-05-2025 Saturday
 
+Session1:
 Recap
 JAM
 Q&A
 Day Agenda/Content
 
-With CSS
-Cheat Sheet
-Note: Apply CSS to the same content what you created in Day1
-*HTML5 tags
+UI-UX explanation
+HTML continued
+CSS in breif
+CSS Cheat Sheet
+Note: Apply CSS to the same html what you created and implemented in Day1
+*HTML5 tags (Advance tags)
+Designs ready
+Recap of the session
+
+Session2:
+Trainer will implement all the designs created in session1
+Recap of the session
+
+Session3:
+Students implement day2 examples (trainers will help them)
+Revision
+Assessment
+Assignments must be given
+JAM
+Q&A
+Feedback
+Recap of the day
 --------------------------------------
 Day3
 
-HTML, HTML5 and CSS
+Session1:
+Recap
+JAM
+Q&A
+Day Agenda/Content
+HTML, HTML5 and CSS and examples
+Designs
+Recap of session1
 
+Session2:
+Trainer impliments and explains the examples
+Recap of session2
+
+Session3:
+Students implement day2 examples (trainers will help them)
+Last 30 minutes:
+	Revision
+	Assessment
+	Assignments must be given
+	JAM
+	Q&A
+	Feedback
+	Recap of the day
 --------------------------
 Day4
+
+Session1 and session2:
+Recap
+JAM
+Q&A
+Day Agenda/Content
+
 Start with JS
-from basics to loops, array and string problems
-Simple html programs
-add 2 numbers
+from basics (variables, operators, data types, simple programs) conditional programming, loop programs, functions, array/list methods and string problems
+Give simple programs on Arrays and strings to students
+Recap of session1 and 2
 
-
-------------------
+Session3:
+Start with Form problems
+check if username is empty
+check if username and password are empty
+check if username is only alphabetic
+check if username is only alphanumeric
+check if password is minimum 8 chars
+check password must have minimum one symbol 
+check if password has minimum one uppercase letter
+Last 30 minutes:
+	Revision
+	Assessment
+	Assignments must be given
+	JAM
+	Q&A
+	Feedback
+	Recap of the day
+------------------------------------
 Day5
 
-Form with JS
+Session1:
+Recap
+JAM
+Q&A
+Day Agenda/Content
+Bootstrap Introduction
+Enable Bootstrap to our program
+	Use CDN (link)
+	Download bootstrap locally and use it using link or style tag
+	node install bootstrap
+Bootstrap components (Explain them using official documentation)
+Designs
+Recap of session1
+
+Session2:
+Trainer impliments and explains the examples enabled with Bootstrap (includes JS)
+Recap of session2
+
+Session3:
+Students implement day5 Bootstrap examples (trainers will help them) Includes JS
+Last 30 minutes:
+	Revision
+	Assessment
+	Assignments must be given
+	JAM
+	Q&A
+	Feedback
+	Recap of the day
 --------------------------
 Day6
+
+Session1:
+Recap
+JAM
+Q&A
+Day Agenda/Content
 ES6 features
 map, filter, reduce
 spread operator
 big arrow function
 lambda
+Recap of session1
 
+Session2:
+Bootstrap and JS programs
+Calculator, Cart, basics of eCommerce site (Only one product)
+Product: Name/Title, image (image must anchor), rating using stars, number of reviews (hyperlink), actual price, offer price, discount in percentage
 --------------------------
 Day7
 Bootstrap
