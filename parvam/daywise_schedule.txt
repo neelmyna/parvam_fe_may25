@@ -202,21 +202,41 @@ Session2:
 Bootstrap and JS programs
 Calculator, Cart, basics of eCommerce site (Only one product)
 Product: Name/Title, image (image must anchor), rating using stars, number of reviews (hyperlink), actual price, offer price, discount in percentage
+Recap of session2
+
+Session3:
+Students implement day6 Bootstrap examples (trainers will help them) Includes JS
+Last 30 minutes:
+	Revision
+	Assessment
+	Assignments must be given
+	JAM
+	Q&A
+	Feedback
+	Recap of the day
 --------------------------
 Day7
-Bootstrap
+
+Dynamic Table
+Advanced Bootstrap (Navbar, acordian, carosal, model)
 
 --------------------------
 Day8
-Bootstrap
+
+Topics from Parvam content
 
 --------------------------
 Day9
 
-
+Left Over topics
+Any advance topics if you wish to add
+Website creation
+Hosting
 --------------------------
 Day10
 
-
-
-
+Mock Interview (Viva)
+Final Assessment
+Simple documentation of their project
+Project completion and Submission
+Project Evaluation
