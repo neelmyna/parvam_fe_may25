@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<body>
+<h1> To count the number of selected options </h1>
+<form>
+<b>Which training program would you like to attend ?</b>
+		<select
+			multiple size="3" name="pref" id="foo">
+			<option value="ih" selected>Internet-HTML
+			<option value="js">Javascript
+			<option value="vbs">VBscript
+			<option value="as">ASP
+			<option value="xm">XML
+			<option value="jv">JAVA
+			<option value="jsp">jsp</option>
+		</select> <br>
+        <input type="submit" onclick="countOptions()" value="Submit"/>
+</form>
+<script>
+function countOptions()
+{
+  var selectOptions = document.getElementById("foo").options, count = 0;
+  for (var i=0; i < selectOptions.length; i++) {
+    if (selectOptions[i].selected)
+	{
+	  count++;
+	}
+  }
+  alert('The number of selected options is '+count);
+}
+</script>
+</body>
+<html>

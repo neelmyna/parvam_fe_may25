@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>regular expression examples</title>
+</head>
+<body bgcolor="pink">
+<h3> Program to find if the input text is the last word in the paragragh </h3>
+<br>
+<p id="p1"> for This is the for paragraph to be searched</p>
+	<form>
+	<br> Enter the word here:
+	<input type="text" id="tb" value="for" />
+	<input type="submit" onclick="compareLastWord()" value="Submit" id="s1" />
+	
+</form>	
+<script>
+function compareLastWord()
+{
+   var textBoxValue = document.getElementById("tb").value;
+   var paragraphValue = document.getElementById("p1").value;
+   
+   var regexp = new RegExp(textBoxValue); 
+   
+   if (textBoxValue ==  paragraphValue)
+   {
+      alert(textBoxValue+' is present in the para');
+   } 
+   else
+   {
+      alert(textBoxValue+' is not present in the para');
+   }
+}
+
+</script>
+</body>
+</html>

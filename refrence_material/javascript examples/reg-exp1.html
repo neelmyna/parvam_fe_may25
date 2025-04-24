@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>regular expression examples</title>
+</head>
+<body bgcolor="ivory">
+	<form >
+	<input type="submit" onclick="upper_case()" value="99xbcde" id="s1" />
+	
+</form>	
+<script>
+function upper_case(str)
+{
+   var str1 = document.getElementById("s1").value;
+   regexp = /^[0-9]/i;
+   if (regexp.test(str1))
+    {
+      alert('TRUE');
+    } 
+	else
+    {
+      alert("String first character is not uppercase");
+    }
+}
+</script>
+</body>
+</html>

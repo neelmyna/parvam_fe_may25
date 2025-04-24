@@ -1,0 +1,31 @@
+
+<html>
+<head>
+<title> Javascript Example </title>
+
+<script type="text/javascript">
+
+function substitute()
+{
+var myValue = document.getElementById('myTextBox').value;
+
+if(myValue.length == 0)
+{
+  alert('Text box cannot be empty');
+  return;
+}
+ var myTitle = document.getElementById('title');
+ myTitle.innerHTML = myValue;
+
+}
+
+</script>
+</head>
+<body>
+<h1 id="title"> Javascript Example</h1>
+
+<input type="text" id="myTextBox" />
+
+<input type="submit" value="click me" onclick="substitute()" />
+</body>
+</html>

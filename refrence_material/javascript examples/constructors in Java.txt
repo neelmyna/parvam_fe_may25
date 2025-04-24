@@ -1,0 +1,158 @@
+Constructors
+
+* A cons is nothing but a method (member function) of a class
+* A cons is always Object related and not class related.
+* A cons is always called as soon as an object of the class is created.
+* That is, nothing happens in-between the object creation and the call to the cons.
+* A cons can be over-loaded.
+* That is a class can have more than one cons.
+* The cons that takes no argument, is called as Zero Arg Cons or default cons.
+* A cons that takes one or more args is called as parameterised cons.
+* A cons cannot return a value. Because there is no way to catch or accept the return
+value of a cons.
+* And hence, a cons cannot have the return type as void also.
+* Because, void is used as return type for those functions which have the capacity to
+return a value, but we dont want that function to return a value.
+* A cons is always called implicitly by the jvm.
+* A cons must have same name as that of the class.
+* A cons cannot ever be called explicitly by the programmer.
+* A cons must always be used only to initialize an object.
+* A cons cannot be static, abstract and final.
+* In java, w.r.t. objects, all the functions (including cons) receive objects by reference.
+That is, there is no concept of call by value in java (w.r.t. objs).
+So, in java, all the cons that receives an object are implicitly copy cons.
+
+
+void func1()
+{
+  kgfkadw
+  jhdwghe
+  kvkefkef
+  return;
+}
+
+root = sqrt(10);
+
+A ref = new A();
+
+
+class Parent  // abstract
+{
+  
+  startEngine() {  sdjdsjk; kjhsk; }
+  stopEngine() {  hgh;  jhdwj; }
+  abstract applyBreak();
+  abstract acclerate();
+  abstract Parent();
+}
+
+class Child extends Parent
+{
+
+Parent()
+  {
+
+  }
+
+
+}
+
+Child ref = new Child();
+
+
+void f()  // this function cannot return a VALUE
+{
+
+return;
+}
+
+variable
+method
+class
+
+escapeVelocity 
+float final static pi = 3.1428
+
+
+final class EmployeeEnrolment
+{
+  sortEmployeeRecords()
+}
+
+A final method of a class is one that cannot be over-ridden (giving one more sln to the
+same problem)
+
+
+
+
+class Student
+{
+  String name;
+  int id;
+  int attandance;
+  String HOD;
+}
+
+
+
+int i; // declaration
+i = 10; // assignment
+
+int i = 10;  // initialization
+
+void* malloc(unsigned int);
+
+
+constructor - instance method
+it is a member of a class
+
+visibility / accessibility / scope
+private - within the class
+default/friendly - within the package
+protected - within the package and sub-classes in other packages
+public - any where in the program/project
+
+Can a cons be put into private section of a class
+
+class Person
+{
+  private int a;  
+  public Person() // default cons
+  {
+     a = 0;  
+  }
+  private Person(int age)  // param cons
+  {
+    this.age = age;
+  }
+  public void setAge(int age)
+  {
+    this.a = age;
+  }
+}
+
+class X
+{
+  Person ref1 = new Person();
+  Person ref2 = new Person();
+  Person ref3 = new Person();
+  
+  ref1.setAge(30);
+  ref2.setAge(22);
+  ref3.setAge(20);
+}
+}
+
+this reference is a reference which is created automatically by the jvm
+as soon as the control goes inside an instance method.
+It is a refernce to the object which invokes the method.
+
+int arr[10] = {1, 2, 3, 4 ,5};
+
+
+
+    this(20);  we are calling the overloaded cons
+	System.out.print("Mobile phone gone");
+	
+	
+	

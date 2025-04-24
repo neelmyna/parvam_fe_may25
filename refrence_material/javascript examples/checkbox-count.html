@@ -1,0 +1,36 @@
+<html>
+  <head>
+        
+  </head>
+  
+  <body>
+	  <form>
+        <label><input id="check1" type="checkbox"> Apple </label>
+		<label><input id="check2" type="checkbox"> Banana </label>
+		<label><input id="check3" type="checkbox"> Guava </label>
+		<label><input id="check4" type="checkbox"> Strawberry </label>
+		<label><input id="check5" type="checkbox"> Mango </label>
+        <button onclick="exefunction()"> Count Checked </button>
+	  </form>
+	  <script language="javascript" type="text/javascript">
+            function exefunction(){
+			    var t1 = false, t2 = false, t3 = false, t4 = false, t5 = false;
+                t1 = document.getElementById("check1").checked;
+                t2 = document.getElementById("check2").checked;
+				t3 = document.getElementById("check3").checked;
+                t4 = document.getElementById("check4").checked;
+				t5 = document.getElementById("check5").checked;
+				var countChecked = 0;
+				var arr = new Array(t1, t2, t3, t4, t5);
+				for(var i = 0; i < arr.length; i++)
+				{
+				   if(arr[i])
+				   {
+				       countChecked++;
+				   }
+				}
+				alert(countChecked);
+            }
+      </script>
+  </body>
+</html>

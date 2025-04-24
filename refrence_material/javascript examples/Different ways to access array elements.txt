@@ -1,0 +1,14 @@
+
+var numbers = new Array(1, 2, 3, 4, 5);
+
+for(var i in numbers)
+  alert(numbers[i]);
+  
+  
+numbers.forEach( function(number) {
+  console.log(number); } );
+
+for(var i = 0; i < numbers.length; i++)
+{
+   alert(numbers[i]);
+}

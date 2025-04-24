@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>form examples</title>
+</head>
+<body bgcolor="ivory">
+	<form >
+	<input type="submit" onclick="upper_case()" value="ABCcde" id="s1" />
+
+</form>	
+<script>
+function upper_case(str)
+{
+    var str1 = document.getElementById("s1").value;
+   
+   	alert(/abc/i.test(str1));
+	
+}
+</script>
+</body>
+</html>
+
+   var re = new RegExp("\\b"+test+"\\b"); 
+   
+   var string = 'asdgghjjkhkh';
+var string2 = 'a';
+var regex = new RegExp( string2, 'g' );
+string.match(regex);

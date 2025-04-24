@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>regular expression examples</title>
+</head>
+<body bgcolor="ivory">
+	<form >
+	
+	<button onclick="myFunction()">Try it</button>
+    <h1 id="demo"> </h1>
+</form>	
+<script>
+function myFunction()
+{
+   var s1 = "Hello all of you";
+   regExp = /hello(?= all)/i;
+   alert(s1.match(regExp));
+}
+</script>
+</body>
+</html>
