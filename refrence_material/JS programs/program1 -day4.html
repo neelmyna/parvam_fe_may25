@@ -1,0 +1,84 @@
+<!Doctype html>
+<html lang="en-US">
+	<head>
+		<title> Day4 - Example1 </title>
+		<style>
+			body > div {
+				border: 2px solid black;
+				background-color: cyan;
+				padding: 5px;
+				width: 275px;
+				margin-left: 620px;
+			}
+			h1 {
+				margin-left: 10px;
+				font-style: italic;
+				font-family: consolas;
+				text-align: center;
+			}
+			form > div > label {
+				display: block;
+				width:220px;
+				font-family:consolas;
+			}
+			form > div {
+				margin-bottom: 10px;
+				margin-left: 10px;
+			}
+			input[type=text] {
+				padding: 5px;
+				border: 2px solid brown;
+				border-radius: 5px;
+			}
+			input[type=button] {
+				padding: 10px;
+				border: 2px solid brown;
+				border-radius: 12px;
+				width: 60px;
+				background-color: orange;
+				color: white;
+				font-weight: bold;
+				font-family: consolas;
+				font-size: 16px;
+				margin-left: 12px; 
+			}
+		</style>		
+		<script type="text/javascript">
+			function findSum() {
+				let firstNum = parseInt(idFirstNum.value)// bcoz textBox data will be string
+				let secondNum = parseInt(idSecondNum.value) 
+				let sum = firstNum + secondNum;
+				idResultNum.value = sum;
+			}
+			function findDifference() {
+				var firstNum = parseInt(idFirstNum.value)
+				var secondNum = parseInt(idSecondNum.value) // bcoz text box data will be string
+				var diffNum = firstNum - secondNum;
+				idResultNum.value = Math.abs(diffNum)
+			}			
+		</script>
+	</head>
+	<body>
+		<h1> SIMPLE CALCULATOR </h1>
+		<div align = center>
+			<form name="calcForm" id="idCalcForm" method="post" action="google.com">
+				<div>
+					<label style= "margin-top: 10px" for="idFirstNum"> Enter Fisrt Number: </lable>
+					<input type="text" name="fisrtNum" id="idFirstNum">
+				</div>
+				<div>
+					<label for="idSecondNum"> Enter Second Number: </lable>
+					<input type="text" name="secondNum" id="idSecondNum">
+				</div>
+				<div>
+					<label for="idResultNum"> Result is: </lable>
+					<input type="text" name="resultNum" id="idResultNum">
+				</div>
+				<div>
+					<input type="button" value="Sum" onclick="findSum();">
+					<input type="button" value="Diff" onclick="findDifference();">
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

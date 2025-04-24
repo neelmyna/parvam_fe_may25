@@ -1,0 +1,36 @@
+body {
+		margin: 5px;
+		padding: 10px;
+		background-color: yellow;
+	}
+
+div {
+	margin: 10 px;
+	padding: 10px;
+	border: 2px solid grey;
+	background-color: lightgreen;
+}
+
+div > input {
+	border-color: brown;
+	padding: 6px;
+	margin-bottom:15px;
+	border-radius: 5px;
+	background-color: orange;
+	border: 2px dotted brown;
+}
+
+div > label {
+	display: inline-block;
+	width: 150px;
+}
+
+.button1 {
+	font-weight: bold;
+	margin-left:155px;
+}
+
+div > p {
+	font-size: 20px;
+	font-family: verdana;
+}

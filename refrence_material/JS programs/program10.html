@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<link rel="stylesheet" type="text/css" href="css1.css">
+
+		<title> Simple Calculator </title>	
+	</head>
+	<body>
+		<h1> Simple Calculator </h1>
+		<div>
+			<label for = "firstNum"> Enter First Number: </label>
+			<input type = "text" id = "firstNum"> 
+			<br>
+			<label for = "secondNum"> Enter Second Number: </label>
+			<input type = "text" id = "secondNum">
+			<br>
+			<label for = "thirdNum"> The Sum is: </label>
+			<input type = "text" id = "thirdNum">
+		</div>
+		<div>
+			<input class = button1 type = "button" onclick = "findSum();" value = "Find Sum"> <br>
+			<p id="anotherDayNumber"> </p>
+		</div>
+		<script type="text/javascript">
+			function findSum() {
+				
+				var firstNum  = document.getElementById("firstNum").value;
+				var secondNum = document.getElementById("secondNum").value;
+				firstNum  = parseFloat(firstNum);
+				secondNum = parseFloat(secondNum);
+				var sum = firstNum + secondNum;
+				document.getElementById("thirdNum").value = sum;
+			}
+		</script>
+	</body>
+</html>

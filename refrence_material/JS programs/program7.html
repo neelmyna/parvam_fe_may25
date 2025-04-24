@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<style>
+			p { background-color:brown; color:white; }
+		</style>
+		<title> Java Script Program </title>	
+	</head>
+	<body>
+		<h1> Switch Case Program </h1>
+		<script type="text/javascript">
+			function printDayNumber() {
+				dayName = prompt("Enter day to print its number:")
+				dayName = dayName.toLowerCase();
+				switch(dayName) {
+					case "monday"    : alert("1"); break;
+					case "tuesday"   : alert("2"); break;
+					case "wednesday" : alert("3"); break;
+					case "friday"    : alert("5"); break;
+					case "thursday"  : alert("4"); break;
+					case "saturday"  : alert("6"); break;
+					case "sunday"    : alert("7"); break;
+					default          : alert("Invalid Data");
+				}
+			}
+			printDayNumber(); // Function call stmt
+		</script>
+	</body>
+</html>

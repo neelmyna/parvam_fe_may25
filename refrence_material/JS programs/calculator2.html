@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Calculator - 2</title>
+		<style>
+			
+			h1 { text-align: center }
+			
+			form > div{
+				margin-bottom: 10px;
+			}
+			span{
+				display:inline-block;width:140px;
+				padding:10px;
+				border:1px solid red;
+				text-align:right;
+				min-height:30px;
+			}
+			
+			input[type=button]{
+				padding: 5px;
+				border: 1px solid cyan;
+				border-radius:20px;
+				background-color:orange;
+				color:white;
+				font-weight:bold;
+				width:40px;
+			}
+		</style>
+		<script type="text/javascript">
+			var first = "";
+			var second = "";
+			var op = "";
+			function findOp(a, b, operator){
+				a = parseInt(a)
+				b = parseInt(b)
+				var res = 0;
+				switch(operator){
+					case '+': res = a + b; break;
+					case '-': res = a - b; break;
+					case '*': res = a * b; break;
+					case '/': res = a / b; break;
+				}
+				return res;
+			}
+			function doCal(btVal){
+				switch(btVal){
+					case '+':
+					case '-':
+					case '*':
+					case '/': // if operator 
+						op = btVal; 
+						break;
+					case '=': // if equal
+						if (calArea.innerHTML == '') {
+							alert("Enter some number")
+							return false;
+						}	
+						if(first == '' || second == '')
+							return false
+						first = findOp(first,second,op) + ''; //concat result with empty string to convert to string back
+						second = ''; 
+						op = '';
+						break;
+					default: //if operand
+						if(op == '') //if operator is not chosen
+							first += btVal;										
+						else if(op != '') // if operator is chosen 
+							second += btVal;						
+				}
+				calArea.innerHTML = first + op + second;				
+			}
+			function clearCal(){
+				first = "";
+				second = "";
+				op = "";
+				calArea.innerHTML = first;
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Calculator v2</h1>
+		<form name="calFrm" method="post" action="google.com" style="text-align:center;">
+			<div>
+				<span id="calArea"></span>
+			</div>	
+			<div>
+				<input type="button" value="clear" style="width:120px;" onclick="clearCal();">	
+				<input type="button" value="+" onclick="doCal(this.value)">
+			</div>
+			<div>
+				<input type="button" value="7" onclick="doCal(this.value)">	
+				<input type="button" value="8" onclick="doCal(this.value)">	
+				<input type="button" value="9" onclick="doCal(this.value)">	
+				<input type="button" value="/" onclick="doCal(this.value)">	
+			</div>
+			<div>
+				<input type="button" value="4" onclick="doCal(this.value)">	
+				<input type="button" value="5" onclick="doCal(this.value)">	
+				<input type="button" value="6" onclick="doCal(this.value)">	
+				<input type="button" value="*" onclick="doCal(this.value)">
+			</div>
+			<div>
+				<input type="button" value="3" onclick="doCal(this.value)">	
+				<input type="button" value="2" onclick="doCal(this.value)">	
+				<input type="button" value="1" onclick="doCal(this.value)">	
+				<input type="button" value="-" onclick="doCal(this.value)">
+			</div>
+			<div>
+				<input type="button" value="0" style="width:130px;" onclick="doCal(this.value)">		
+				<input type="button" value="=" onclick="doCal(this.value)">
+			</div>
+				
+		</form>
+	</body>
+</html>

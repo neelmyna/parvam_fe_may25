@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang = "en-US">
+	<head>
+		<link rel = "stylesheet" type = "text/css" href = "css1.css">
+
+		<title> Java Script Program </title>	
+	</head>
+	<body>
+		<h1> Switch Case Program8 </h1>
+		<div>
+			<label for = "dayName"> Enter Day Name: </label>
+			<input type = "text" id = "dayName"> <br>
+			
+			<label for = "dayNum"> Day Number is: </label>
+			<input type = "text" id = "dayNum">
+		</div>
+		<div>
+			<input class = button1 type = "button" onclick = "findDayNumber();" value = "Find now !"> <br>
+			<p id = "anotherDayNumber"> </p>
+		</div>
+		<script type="text/javascript">
+			function findDayNumber() {	
+				var dayName = document.getElementById("dayName").value; 
+				//dayName.value
+				switch(dayName) {
+					case  "Monday" :
+							res = 1;	
+							break;
+					case "Tuesday" :
+							res = 2;	
+							break;
+					case "Wednesday" :
+							res = 3;	
+							break;
+					default: res = "Input Error";
+				}
+				document.getElementById("dayNum").value = res;
+				document.getElementById("anotherDayNumber").innerHTML = "Day Num = " + res;
+			}
+		</script>
+	</body>
+</html>

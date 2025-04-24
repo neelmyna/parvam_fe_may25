@@ -1,0 +1,58 @@
+h1{
+	text-align:center;
+}
+
+body > div > table, th {
+	border: 2px solid black; 
+	margin: right;
+	padding: 10px;
+}
+
+td {
+	border: 2px solid black; 
+	text-align: center;
+	color:brown;
+	padding: 10px;
+	width: 120px;
+}
+
+body > form > div {
+	border: 2px solid black;		
+	background-color: yellow;
+	padding: 10px;
+	width: 500PX;
+	margin-left: 400px;
+	border-radius: 5px;
+	margin-bottom: 100px;
+}
+
+input[type=text]{
+	padding: 8px;
+	border: 2px solid grey;
+	border-radius:5px;
+	width: 300px;
+} 
+
+input[type=button]{
+	text-align: center;
+	color: white;
+	padding: 9px;
+	border: 10px cyan;
+	border-radius: 30px;
+	width: 150px;
+	background-color: black;
+	font-family: consolas;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.div1{
+	border: 3px solid brown;
+	background-color: #FFFDD0;
+	display: block;
+	font-family:consolas;
+	font-size: 20px;
+	margin-bottom: 5px;
+    width: 480px;
+	margin-left: 500px;
+}

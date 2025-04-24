@@ -1,0 +1,637 @@
+ https://its-group.webex.com/its-group/j.php?MTID=m3eefbdb2eb10239f40621c6ed8acea39
+
+1. Create a folder with name newgen training
+	1. create sub folder html
+	2. css
+	3. js, Ajax and json, (HTML5)
+	4. java
+		* OOP, Arrays and String
+		* Exception handling and collections
+		* jdbc
+	5. DataBase
+		1. Basics (RDBMS, ACID, select Sub-languages, various clauses)
+		2. Stored Procedures, Functons, Triggers and cursor
+	6. Jsp, Servelets, json
+	7. Project
+
+HTML
+* It is a language used to create web pages.
+* It is case insensitive.
+* The compiler and runtime machine of HTML is embedded inside the BROWSER
+* HTML uses various Tags whih are also called as Elements. And these tags will have atrributes which alter or over-ride the default/implicit behaviour.
+* Languages similar to HTML are XML, CSS
+
+TEMPLATE OF A HTML CODE/PROGRAM
+
+<doctype html!> <! It defines the document type. This is optional in most of the cases -->
+<! THIS IS A HTML COMMENT. Comments do not get compiled nor run -->
+<HTML type = "text/html">
+<! type is an attribute of many a tags -->
+	<HEAD>
+		<! All info and data (meta data) and the source files or scripts can be added here -->
+	</HEAD>
+	<BODY> <!
+		<! All the elements/tags of the web page are added in to the body tag -->
+	</BODY>
+</HTML>
+
+TAGS:
+<a> Anchor Tag: To specify a hyperlink (internal or external files)
+
+<abbr> Abbreviation tag: It defines a Acronym
+
+<audio> It is used to add an audio file with basic/default audio controls.
+
+<b> It is used to bold a piece of text in the webpage
+<strong> It is similar to <b> wu
+<i> It is used to Italisize a piece of text in the webpage
+<u> It is used to underline a piece of text in the webpage
+<br> To add a line break (To go to the new line (ext line))
+<hr> To add a Thin Horizontal line in the webpage
+<p> To add a paragraph in the webpage
+<pre> To add a paragraph and also keep the content as given insie the <pre> tag
+<left> To align the text to left
+<right> To align the text to right
+<center> To align the text to center
+<del> To specify the text in the webpage to be deleted
+<div> To create a independent division in the webpage
+<footer> To add a footer to the webpage
+<title> To add title to a webpage (which will be displayed in title bar with left alignment
+<H1> To display text as a header (Other headers are h2, h3, h4, h5 and h6)
+<meta> It is used to define the properties of the webpage. That is the data about the data of the webpage.
+<table>
+<td>
+<th>
+<tr>
+<ul>
+<ol>
+<li>
+<ins> Underline
+<u> underline
+<i> italic
+<b> bold
+<mark> yellow bgcolor (highlighter)
+<marquee> For the moving text or image (direction, scrollamount, loop, bgcolor, width)
+<link> To link to an external file
+<del> Similar to line-through (text-decoration)
+
+PADDING: It is the space we allocate to print the text. After the text is printed (Note that the text font size will be the default size), the left difference of the padding size allocated and the font-size will act like the margin.
+
+MARGIN: After the text is printed, we can specify some margin space.
+
+
+Create a HTML (Non interactive)
+Use appropriate styles (Try using Bootstrap)
+Create a form with as many form elements (Text boxes, drop down lists, check boxes, labels, date, radio buttons, submit button, reset button)
+Create a table with multiple rows and columns (Table must have sub tables - colspan, rowspan)
+Give name and ID to every element.
+Divide the table, form and pictures (if any) into different divisions
+
+The Markup Lang code is compiled and run by the Browser or silmilar Apps
+
+<!doctype html>
+
+The <html> tag is the root most tag for a html file.
+
+The <head> is the section where we put all the necessary links, tags like <meta> <title> <link> 
+he content inside the <head> doesn't include any of the web-page content.
+
+<title>
+Title Tag: The title of the webpage/website
+
+<body>
+Body Tag: Where all the content of the webpage are put in.
+
+<h1>
+Header1 Tg: To display the headers/heading. h1 has biggest font size and it reduces upto h6.
+The headers are by default bolded
+
+<p>
+Paragraph tag: which always start with new line. And it is useful to print multiple lines of text.
+Even if we have given the text in multiple lines in the html code, the new lines are not printed until unless the <br> tag is used.
+
+<pre>
+pre-defined Paragraph FORMAT Tag: It is similar to paragraph tag but the text inside the tag is printed exactly the way we have given the text inside the html code.
+
+<div>
+Division Tag: To create different divisions in the webpage, the <div> tag is very useful. All the content of the <div> tag are printed in new lines.
+
+<a>
+Anchor Tag: It is similar to the <link> tag where give the href
+
+<input>
+Input Tag: It is used to read input. Example, text box
+
+<Label>
+It is used to add a label to the existing text box. Thus we can link a label with a text box.
+
+<table>
+To create a table of Rows and Columns.
+<th>
+Table Header Tag: To set the 1st row fields as column headers in the table. By default, they are bolded.
+<tr>
+Table Row Tag: To set each Row in the table
+<td>
+Table Data Tag: Refers to every CELL in which the data is stored in the table.
+
+<center> To place the text in a line at center of the line.
+
+<br>
+Line Break. To add a new line. It is similar to '/n' escape sequence in C, C++ and Java
+
+<hr>
+Horizontal Line Tag: It is used to divide the page into sections horizontally by adding a thin horizontal line.
+
+<b> To make the text bolded
+<strong> To make the text bolded
+
+<i> Italic
+
+<u> Underline the text
+<ins> It is also used for underlining
+
+<mark>
+It is to highlight the text. It uses Yellow color by default for highlighting.
+
+<style> To give the style for our webpage. This tag must appear in hgead sction only.
+
+<del> To add line through for the text
+This can be achieved also using CSS
+text-decoration: line-through
+
+<footer> To add the footer notes something like copyright msgs.
+
+<ul>
+To create a unordered list with dotted buttons
+<li> To mention the list (ordered/unordered) elements
+<ol> To create a ordered list of elements. Numbering starts from 1
+
+
+
+The typical Template of a HTML file:
+
+<!Doctype HTML>
+<html>
+	<head>
+		Document header related tags will go here
+	</head>
+	
+	<body>
+		Document Body related tags will go here 
+	</body>
+</html>
+
+<!-- 
+	This is a 
+	HTML Multi line
+	Comment
+-->
+
+<!-- This is a HTML Single line Comment -->
+
+NOTE: HTML code is case in-sensitive. Thus we can write the code in any case.
+
+For most of the tags in HTML, we have Attributes. Thse attributes change the default behaviour of working of the tags.
+
+"align" It is used to align the text to the left, right or center.
+
+<p align = "left" >      </p>
+
+The different types of Attributes available are:
+1. ID
+2. Title
+3. Class
+4. Style
+
+
+There is one more attribute "lang" To specify the language
+<html lang="en-US">
+This is to say that we want to use the US English language.
+
+Methods to create a html file:
+
+METHOD1: (Static)
+* Create the components/elements/tags of the page.
+* Within the tags/elements, mention the attributes and add the STYLE for the element.
+
+Disadvantage: Need to change the code/tags manually to modify the look and feel of the component in the page.
+
+METHOD2:
+* Create HTML code in a file
+* Add the styles to the components for the web page in a separate file.
+* We have  seperated the content of the page and its style.
+
+ADVANTAGE: Change the style code (.css file) and get new/different look and feel for the web page.
+
+Using JS, we can make the style of the web page DYNAMIC.
+JS makes the webpage interactive.
+
+To add icon/logo/image to the title bar:
+Method1: Use favicon
+<link rel = "shortcut icon" href = "  " type = "image/x-icon">
+
+<br> is used to add an empty line
+<hr> is used to add a line in the web page
+
+ARITHMETIC OPERATORS: + - * / %
+1. All are binary operators (2 operands are necessary)
+2. Used with infix notation (operator is placed in between the operands)
+3. Input are numbers and output is also a number.
+The operators + - have lesser precedence than the operators * / %
+
+RELATIONAL OPERATORS:
+1. All are binary oprs.
+2. Used with infix notation
+3. Input are numbers and output is Boolean value (Truth value)
+> < >= <= == != ===
+
+LOGICAL OPERATORS:
+1. All are binary expect the Not opr.
+2. Used with infix notation
+3. Input are Boolean values and output is also Boolean.
+&& || ! (Short Circuiting)
+& | ! (No Short Circuiting)
+! (Not opr) is a unary opr.
+
+C1	C2	C1andC2		C1orC2
+F	F		F(1)	F(2)
+F	T		F(1)	T(2)
+T	F		F(2)	T(1)
+T	T		T(2)	T(1)
+
+BITWISE OPERATORS:
+Note-The operation is performed on every bit in memory of the variable.
+1. All are binary oprs except ~ (1s compliment)
+2. Infix notation
+3. Input are numbers and output is also a number.
+& | ^ ~ >> <<
+
+Short Hand Assignment Oprs (Compound Assignment Oprs):
++=  -=
+a = a + 5;
+a += 5;
+
+Updation Oprs:
+++ -- (pre / post)
+num1 = num2++; // (Post increment) First assign the value of num2 to num1, then increment num2
+num1 = --num2; // (Pre decrement) First decrement num2. Then assign the new value of num2 to num1
+
+Conditional Operator ? : (Ternary opr)
+
+num1 = 10;
+/* The above stmt is a declarative and initialization stmt.
+We have declared a variable num1 and also we have initialized a value to it.
+The semicolon at the end of the stmt is optional.
+THIS IS A MULTI LINE COMMENT
+*/
+
+// This is a single line comment which is also used in C, C++, Java and C#
+
+var num1;
+//The above stmt is also a declarative stmt. However, we have not initialized the variable.
+//So, its value would be either UNDEFINED or null
+
+DATA-TYPES available in JS:
+"undefined" (Where no value is present in the variable)
+Usually some of the return stmts will have this value.
+
+"null"  It mentions that the variable Empty.
+Note that undefined and null are different.
+undefined means, the variable is not yet initialized
+null means, the variable is empty (assigning or initializing a variable is done)
+
+"boolean" true / false
+
+"string" To store names or alphanumeric data like IDs or sometimes text as well
+
+"number" To store a Number. Either integer or real number (float)
+
+"object" To store either key-value pair or store encapsulated (binded) data. Example, student data (Name, id, marks) or Product data (id, name, price, type) In JS, objects are called as Json (Java Script Object Notation)
+
+CONTROL STATEMENTS AVAILABLE IN JS:
+Conditional if-else
+switch-case
+Looping (while for and do-while)
+
+Derived DT to store multiple values together we have:
+Arrays
+
+DIFFERENT WAYS TO DECLARE A VARIABLE:
+1.
+var myName = "Nithin"; // semicolon is optional but let us use it.
+usually the "var" is used to define global variables
+2.
+myName = "Nithin" // The var keyword is optional, so is the semicolon
+3.
+let myName = "Nithin" // usually the "let" is used to define variables inside functions or blocks. That is to denife local variables.
+4.
+const batch_size = 25;
+This is to create READ-ONLY-VARIABLES
+
+NOTE: Like C, C++ and Java, JS is also case-sensitive
+Hence:
+1. var myName;
+2. var myname;
+These 2 are different variables though the spellings are same.
+
+DIFFERENT WAYS WE CAN PRINT THE OUTPUT:
+
+console.log()
+It can be used to print the ouput or any text on the command prompt or the console in the browser.
+
+document.write()
+It is used to write the text/output on the webpage(Document)
+Alernatively, we can use writeln() function which adds a new line at the end of the text.
+
+alert()
+This is to print the output ot text on the ALERT POP-UP WINDOW
+
+WHY JS?
+To do the validations at the client side itself (without having to connect to the server for data validations), we use JS.
+This saves lot of time, resources and also helps to achive real-life situations (Instantaneous interaction)
+
+1st the JS code does the validations
+Then the CSS is applied to the document (webpage) content
+Lastly the webpage is loaded by the browser
+
+
+var firstNum  = prompt("Enter the first Num: "); // stores a string
+let secondNum = parseInt(prompt("Enter the second Num: ")); // stores a number
+var sum = firstNum + secondNum; // number + string = string + string = string
+				
+var firstNum  = parseInt(prompt("Enter the first Num: ")); // stores a number
+let secondNum = parseInt(prompt("Enter the second Num: ")); // stores a number
+var sum = firstNum + secondNum; // number + number = number				
+
+var firstNum  = prompt("Enter the first Num: "); // stores a string
+let secondNum = prompt("Enter the second Num: "); // stores a string
+var sum = firstNum + secondNum; // string + string = string
+
+if(firstNum == secondNum) {  // == CHECKS ONLY THE DATA and not the data types
+
+if(firstNum === secondNum) {  // === CHECKS both the data and also the data types
+
+var s1 = "Nithin";
+console.log(s1.length);
+console.log(s1[0]);
+console.log(s1[2]);
+console.log(s1[9]);
+
+var arr = [10, 20, 5, 15, 95, 75, 50];
+
+function printDayName() {
+	var arr = [10, 20, 30, 40]
+	alert(arr)
+}
+
+function printDayName() {
+	var peaks = [] // created an empty array
+	peaks[0] = "Hathi Parvat"
+	peaks[1] = "Swarg Rohini"
+	peaks[2] = "Neelkanth"
+	peaks[3] = "Bandar Poonch"
+	alert(peaks)
+	alert(peaks[1])
+}
+
+function printDayName() {
+	var peaks = [] // created an empty array
+	peaks[0] = "Hathi Parvat" // Adding 1st element to the Array
+	peaks[1] = "Swarg Rohini" // Adding 2nd element to the Array
+	peaks[2] = "Neelkanth"  // Adding 3rd element to the Array
+	peaks[3] = "Bandar Poonch" // Adding 4th element to the Array
+	alert(peaks) // Printing the entire Array
+	alert(peaks[1]) // Printing only 2nd element in the Array
+	peaks[2] = "Kedarnath" // Over-writing an element in the Array
+	alert(peaks[2]) // Confirming the over-write
+	peaks = [1, 2, 3] // The peaks is now referencing to a new Array
+	alert(peaks) // Printing the new Array
+}
+
+function printDayName() {
+	var mountainPasses = new Array("Zojila", "Bumla", "Nathula", "Khardungla")
+	for(var i = 0; i < mountainPasses.length; i++) {
+		document.write( " <br> " + (i+1) + "." + mountainPasses[i]) 
+	}
+}
+
+function printDayName() {
+	charDham = ['Yamunotri', 'Gangotri', 'Kedarnath', 'Badrinath']
+	document.getElementById("dhams").innerHTML = charDham
+}
+---------------------------------------------------------------------
+function printDayName() {
+	//var student1 = ['CS2020VV019', 'Nithin', 77]
+	student2 = { studId : 'CS2020VV020', studName : 'Subha Pai', marks : 88 }
+	// create a JSON object which is a student record
+	document.getElementById("studId").innerHTML = tostring(student2)
+	//call the function tostring() which we are only defining and send the json to it.
+}
+function tostring(studJson) {
+	studRecord = "" // take an empty string
+	studRecord += studJson.studId + " " // append stud-id to the string
+	studRecord += studJson.studName + " " // append stud-name to the string
+	studRecord += studJson.marks // append stud-marks to the string
+	return studRecord // return the string that is built
+}
+-------------------------------------------------------------------------
+function arrayDemo() {
+	var arr = [1, 3, 5, 7, 9]
+	str2 = arr.toString() // calls the inbuilt function which converts an array into a string
+	str = tostring(arr); // call the tostring() method by sending the array
+	alert(str) // print the string that is built using the array
+	alert(str.charAt(1)) // prints the 2nd element in the array which is str[1]
+	alert(str.length) // prints the length of the string
+}
+function tostring(arr) {
+	str = ""
+	for(var i = 0; i < arr.length; i++) { // iterate the Array elements
+		str += arr[i] + "  " // append eah array element along with space
+	}
+	return str
+}
+-------------------------------------------------------------------------------
+function arrayDemo() {
+	students = [ { studId : 'CS2020VV019', studName : 'Nithin', marks : 88 }, { studId : 'CS2020VV020', studName : 'Subha Pai', marks : 89 } ]
+	for (var i = 0; i < students.length; i++) {
+		document.write( " <br> " + "Student" + (i+1) + ": " + tostring(students[i]))
+	}
+}
+--------------------------------------------------------------------------------
+function arrayDemo() {
+	arr1 = [11, 22, 10, 5, 9, 20, 55]
+	arr2 = arr1.slice(1, 4) // slicing arr2 from index 1 to index 3
+	//alert(arr2)
+	str1 = "newgen"
+	arr3 = Array.from(str1)//converts a string into an Array
+	//alert(str1)
+	//alert(arr3)
+	arr2 = arr2.concat(arr3)
+	alert(arr2)
+	str2 = arr2.join() // converts an Array into a string
+	alert(str2)
+}
+---------------------------------------------------------------------------------
+function arrayDemo() {
+	var rivers = [ "Gange", "Yamune", "Godavari", "Krishne", "Narmada", "Sindhu", "Kaveri" ]
+	htmlCode = "<ul>"
+	for(let i = 0; i < rivers.length; i++) {
+		htmlCode = htmlCode + "<li>" + rivers[i] + "</li>"
+	}
+	htmlCode += "</ul>"
+	document.getElementById("studId").innerHTML = htmlCode
+}
+---------------------------------------------------------------------------------
+<body>
+	<h2 onclick = "arrayDemo();"> CLICK HERE TO PRINT THE ARRAY </h2>
+	<p name = "rivers" id = "riverId"> Data will be replaced here </p>
+	<script type="text/javascript">
+		var htmlCode = "<ol>";
+		function arrayDemo() {
+			var rivers = [ "Gange", "Yamune", "Godavari", "Krishne", "Narmada", "Sindhu", Kaveri" ]
+			rivers.forEach(addRiverToOrderedList)
+			htmlCode += "</ol>"
+			document.getElementById("riverId").innerHTML = htmlCode
+		}
+		function addRiverToOrderedList(river) {
+			htmlCode += "<li>" + river + "</li>"
+		}
+	</script>
+</body>
+--------------------------------------------------------------------------------------	
+pop() Removes/deletes and returns the last element in the Array
+var num = arr.shift() // Removes the 1st element in an Array and returns it
+arr.unshift("500"); // Adds the new element to beginning of Array and returns its new length
+arr.push(50); // Adds the new element 50 at the end of the Array
+arr.reverse() // Reverses the Array elements
+
+Read the numbers in a text box seperated by space. Then Sort the numbers and print them in another text box.
+---------------------------------------------------------------------------
+1. We take the details of the student in the text box
+2. We seperate the id, name and marks and store it in the Array StudRecord 
+3. We then put all these 3 data along with the RowID/Index which is the length of the Array "arr" into a JSON object. (Line Nos 40 to 44)
+4. Now copy the json into the array "arr" 
+
+5. var output = Mustache.render(myTemplate, {stud: arr});
+Here, we have taken a variable "output"
+
+Now, we are using the Mustache library (This we have downloaded earlier in the day)
+See that the dtable.js file (The one we have coded) and Msutache.js (The one which we downloaded) file are in same folder.
+
+The slice() will take 2 Args: The starting index and the ending index.
+It will take the elements from the starting index and will go upto the index one less than the end index and it will put them into a new array and return the array.
+Note that the slice() will not delete the elements from the original Array.
+slice() is COPY PASTE
+
+splice() is CUT AND PASTE
+It takes 2 Args: 1st Arg is the Index number in the Array and the 2nd Arg is the number of elements to be deleted.
+The spliced Array is Cut from the original Array and returned. Thus the original Array is modified.
+
+arr.sort() // sorts the elements of the Array
+
+1. In the stud001 example, we have used the traditional html and js files.
+
+2. In the stud002 example, we have used html and js with jquery
+Note: To run this program we need Tomcat Server to be running.
+The jquery.js file is downloaded deom the internet and saved inthe webapp folder in our project.
+
+3. In the stud003 example, we have used HTML and JS with Jquery and we have used mustache.js for creating the parsed string out of the MULTI LINE SPANNING STRING and the Array of json objects.
+
+4. In the stud004 example, we have used AJAX.
+------------------------------------------------------------------------------------
+HTML NOTES:
+
+var x=10, y=20, z=15;
+if(x++ >= y && y != z--)
+  console.log("Chandigarh")
+else
+  console.log("Ambala")
+console.log("x=" + x + " y=" + y + " z=" + z)
+
+C1	C2	C1 AND C2	C1 OR C2
+0	0		0			
+0	1
+1	0					1
+1	1					1
+
+var x=10, y=2, z=5;
+if(x++ >= --z | y++ != z)
+  console.log("Mahabaleshwar")
+else
+  console.log("Triambakeshwar")
+console.log("x=" + x + " y=" + y + " z=" + z)
+
+Functions in JS:
+
+var firstNum  = parseInt(prompt("Enter the first Num: "))
+let secondNum = parseInt(prompt("Enter the second Num: "))
+sum = firstNum + secondNum
+alert("Sum = " + sum)
+
+function findSum() {
+	var firstNum  = parseInt(prompt("Enter the first Num: "))
+	let secondNum = parseInt(prompt("Enter the second Num: "))
+	sum = firstNum + secondNum
+	alert("Sum = " + sum)
+	console.log("Sum = " + sum)
+	document.write("Sum = " + sum)
+}
+findSum();
+
+Program to find the sum of Squares of 2 numbers:
+To pass args to a function and also to return value from a function
+
+function findSquare(num) {
+	return (num*num);
+}
+
+function findSumOfSquares() {
+	var firstNum  = parseInt(prompt("Enter the first Num: "))
+	let secondNum = parseInt(prompt("Enter the second Num: "))
+	sum = findSquare(firstNum) + findSquare(secondNum);
+	alert("Sum = " + sum)
+	console.log("Sum = " + sum)
+	document.write("Sum = " + sum)
+}
+findSumOfSquares(); // Function call stmt
+
+Prologue: The control moving from Caller to Callee (Function Call Stmt)
+Business logic: Algorithm defined in the function (All the instructions)
+Epilogue: The control moving back to Caller from Callee (Return stmt)
+
+$("#dispArea").css('color','red').html('nithin').css('font-weight', 'bold')
+
+
+
+1. Install python from python.org
+2. instal pip
+3. pip install django
+4. Copy and send the folder "first" to the students.
+
+
+1A. Run the server..
+1B. Copy the url from the CMD and paste it to the browser.
+2. Inside the first, basic.. holder
+3. template folder has all the html files
+4. At the end of url, paste the html file names to run
+studfrm
+studfrmforpost
+dynaform
+http://127.0.0.1:8000/
+
+What is AJAX?
+AJAX = Asynchronous JavaScript And XML.
+
+AJAX is not a programming language.
+
+AJAX just uses a combination of:
+
+A browser built-in XMLHttpRequest object (to request data from a web server)
+JavaScript and HTML DOM (to display or use the data)
+
+AJAX is a developer's dream, because you can:
+
+Read data from a web server - after the page has loaded
+Update a web page without reloading the page
+Send data to a web server - in the background
+

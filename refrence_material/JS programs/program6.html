@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<style>
+			p { background-color:brown; color:white; }
+		</style>
+		<title> Java Script Program6 </title>	
+	</head>
+	<body>
+		<h2 onclick = "printDayName();"> CLICK HERE TO PRINT THE DAY </h2>
+		<script type="text/javascript">
+			function printDayName() {
+				num = parseInt(prompt("Enter day Number:"))
+				switch(num) {
+					case 1 : alert("It's Monday today"); break;
+					case 2 : alert("It's Tuesday today"); break;
+					case 3 : alert("It's Wednesday today"); break;
+					case 4 : alert("It's Thursday today"); break;
+					default: alert("Invalid Day number entered");
+				}
+			}
+		</script>
+	</body>
+</html>

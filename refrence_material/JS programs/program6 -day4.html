@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Day4-Program6</title>
+		<style>
+			form > div > label {
+				display: inline-block;
+				width:200px;
+			}
+			form > div{
+				margin-bottom: 10px;
+			}
+			input[type=text]{
+				padding: 5px;
+				border: 1px solid silver;
+				border-radius:5px;
+			} 
+			input[type=button]{
+				padding: 10px;
+				border: 1px solid cyan;
+				border-radius:20px;
+				background-color:orange;
+				color:white;
+				font-weight:bold;
+			}
+		</style>
+		<script type="text/javascript">
+		
+			var nameFormat = /^[a-z]+$/;//RE to check that name is lowerCase & alphabetic only
+			
+			function checkDate() {  // DD-MM-YYYY DD\MM\YYYY
+				var dateOnly = idDateOfBirth.value.slice(0, 2); // substring(0,2);
+				dateOnly = parseInt(dateOnly);
+				if(dateOnly > 31) {
+					idDateOfBirth.value = "";
+					alert("Invalid Date Entered");
+					return false;
+				}
+				var monthOnly = idDateOfBirth.value.slice(3, 5); // substring(0,2);
+				monthOnly = parseInt(monthOnly);
+				if(monthOnly > 12) {
+					idDateOfBirth.value = "";
+					alert("Invalid Date Entered");
+					return false;
+				}
+				return true;
+			}
+			function checkNameFormat() {
+				var name = idFirstName.value;
+				name = name.toLowerCase();
+				var isNameCorrect = false; //Assume name format is incorrect
+				if (name.match(nameFormat))
+					isNameCorrect = true;
+				return isNameCorrect;
+			}
+			function readFirstName(){
+				
+				var numberFormat = /^[0-9]+$/;
+				var dateFormat = /^[0-9]{2}[/\-]{1}[0-9]{2}[/\-]{1}[0-9]{4}$/;
+				
+				// Validate that the name cannot be empty
+				if(studFrm.firstName.value == ""){
+					alert("First Name should not be empty");
+					studFrm.firstName.focus();
+					return false;
+				}
+				// Validate that name is alphabetic only
+				if(!checkNameFormat()) {
+					idFirstName.value = "";
+					alert("Name must be alphabetic");
+					studFrm.firstName.focus();
+					return false;
+				}
+				// Validate student age if it is empty
+				if(studFrm.studAge.value == "") {
+					alert("Age cannot be empty");
+					studFrm.studAge.focus();
+					return false;
+				}
+				// Validate that Age is a number - USE RE
+				if(!studFrm.studAge.value.match(numberFormat)) {
+					alert("Age must be a number");
+					studFrm.studAge.focus();
+					return false;
+				}
+				// Validate student Age that it cannot be less than 15
+				if(parseInt(studFrm.studAge.value) < 15) {
+					alert("Age cannot be less than 15");
+					studFrm.studAge.focus();
+					return false;
+				}
+				// Validate student Age that it cannot be greater than 125
+				if(parseInt(studFrm.studAge.value) > 125 ) {
+					alert("Invalid age entered");
+					studFrm.studAge.focus();
+					return false;
+				}
+				// Validate that Date cannot be empty
+				if(studFrm.dateOfBirth.value == "") {
+					alert("Date cannot be empty");
+					studFrm.dateOfBirth.focus();
+					return false;
+				}	
+				// Validate that Date format
+				if(!studFrm.dateOfBirth.value.match(dateFormat)) {
+					alert("DoB should be of format DD-MM-YYYY");
+					studFrm.dateOfBirth.focus();
+					return false;
+				}
+				formDataCorrectness = checkDate();
+				if(formDataCorrectness) {
+					name = idFirstName.value; // Copy first-name from text box to a variable
+
+					str1 = name[0]; //Copying the 1st letter in the string (INDEXING)
+					str2 = name.substring(1); //Copy all letters from name except 1st letter
+					str1 = str1.toUpperCase();//make the 1st letter of name Capital
+					str2 = str2.toLowerCase();//make rest of the letters small case
+					str1 = str1 + str2; //Concatinate both the strings
+					idFirstName.value = str1;//put the concatinated string back in text box
+					alert('Form data is accepted');
+					return true;
+				}
+			} // end of function
+		</script>
+	</head>
+	<body>
+		<h1> Reading data from textboxes and Validating them </h1>
+		<form name="studFrm" method="post" action="">
+			<div>
+				<label for="idFirstName">Enter First Name:</label>
+				<input type="text" name="firstName" id="idFirstName">
+			</div>	
+			<div>
+				<label for="idStudAge">Enter Age:</label>
+				<input type="text" name="studAge" id="idStudAge">
+			</div>
+			<div>
+				<label for="idDateOfBirth">Enter Date of Birth:</label>
+				<input type="text" name="dateOfBirth" id="idDateOfBirth">
+			</div>
+			<div>
+				<input type="button" value="Save Student" onClick="readFirstName()">				
+			</div>		
+		</form>
+	</body>
+</html>

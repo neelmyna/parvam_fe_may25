@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<style>
+			p { background-color:brown; color:white; }
+		</style>
+		<title> Java Script Program6 </title>	
+	</head>
+	<body>
+		<h2 onclick = "printDayName();"> CLICK HERE TO ENJOY YOUR FOOD </h2>
+		<script type="text/javascript">
+			function printDayName() {
+				alert("Welcome to our hotel: THE TASTE")	
+				do {
+					num = parseInt(prompt("1:Veg 2:Non-Veg. Your choice please"))
+					switch(num) {
+						case 1 : num = parseInt(prompt("1:Alu Paratha 2:Idli 3:Dosa. Your choice?"))
+							switch(num) {
+								case 1 : alert("Spicy Paratha for you")
+									break;
+								case 2 : alert("Yummu soft idli for you")
+									break;
+								case 3 : alert("Butter Masala Dosa for you")
+									break;
+								default: alert("Sorry we dont sell GRASS SOUP!!!")
+							}
+						break;
+						case 2 : num = parseInt(prompt("1:Mutton Biryani 2:Fish Curry 3:Chicken Tikka. Your choice?"))
+						switch(num) {
+							case 1 : alert("Hyderabadi for you Ma'am")
+								break;
+							case 2 : alert("Yummu tasty curry for you")
+								break;
+							case 3 : alert("Desi Chicken Sir!!!")
+								break;
+							default: alert("Sorry we dont sell Lizard SOUP!!!")
+						}
+						break;
+						default: alert("Hello Ma'am, this is hotel, not Garden");
+					} // end of outer case
+					choice = prompt("Do you wish to have more? Type Yes/No")
+					choice = choice.toUpperCase()
+				}while(choice == "YES");
+				alert("Namaste Visit Again")
+			} // end of function
+		</script>
+	</body>
+</html>

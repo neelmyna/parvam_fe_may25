@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Day 4 Example 5</title>
+		<style>
+			form > div > label {
+				display: inline-block;
+				width:200px;
+			}
+			form > div{
+				margin-bottom: 10px;
+			}
+			input[type=text]{
+				padding: 5px;
+				border: 1px solid silver;
+				border-radius:5px;
+			} 
+			input[type=button]{
+				padding: 10px;
+				border: 1px solid cyan;
+				border-radius:20px;
+				background-color:orange;
+				color:white;
+				font-weight:bold;
+			}
+		</style>
+		<script type="text/javascript">
+			function readFirstName(){
+				var numberFormat = /^[0-9]+$/;
+				if(studFrm.firstName.value == "") {
+					alert("First Name should not be empty");
+					studFrm.firstName.focus();
+					return false;
+				}				
+				// Validate student age if it is empty
+				else if(studFrm.studAge.value == "") {
+					alert("Age cannot be empty");
+					studFrm.studAge.focus();
+					//return false;
+				}
+				// Validate that Age is a number - USE RE
+				else if(!studFrm.studAge.value.match(numberFormat)) {
+					alert("Age must be a number");
+					studFrm.studAge.focus();
+					//return false;
+				}
+				// Validate student Age that it cannot be less than 15
+				else if(parseInt(studFrm.studAge.value) < 15) {
+					alert("Age cannot be less than 15");
+					studFrm.studAge.focus();
+					//return false;
+				}
+				// Validate student Age that it cannot be greater than 125
+				else if(parseInt(studFrm.studAge.value) > 125 ) {
+					alert("Invalid age entered");
+					studFrm.studAge.focus();
+					//return false;
+				}		
+			} // end of function
+		</script>
+	</head>
+	<body>
+		<h1>Reading data from textbox using textbox Name attribute</h1>
+		<form name="studFrm" method="post" action="">
+			<div>
+				<label for="idFirstName">Enter First Name:</label>
+				<input type="text" name="firstName" id="idFirstName">
+			</div>	
+			<div>
+				<label for="idStudAge">Enter Age:</label>
+				<input type="text" name="studAge" id="idStudAge">
+			</div>
+			<div>
+				<label for="idDateOfBirth">Enter Date of Birth:</label>
+				<input type="text" name="dateOfBirth" id="idDateOfBirth">
+			</div>
+			<div>
+				<input type="button" value="Save Student" onClick="readFirstName()">				
+			</div>		
+		</form>
+	</body>
+</html>

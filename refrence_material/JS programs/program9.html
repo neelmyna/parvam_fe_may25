@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<style>
+			div > div > p { background-color:brown; color:white }
+		</style>
+		<title> Java Script Program1 </title>	
+	</head>
+	<body>
+		<div align = "center">
+			<h1> Loop Program </h1>
+			<p> Sum of Array Numbers </p>
+			<div style = "border: 2px solid red; border-radius:5px; width:400px"> <br>
+				<p id = "idInputNumbers"> </p>
+				<input type = "button" onclick = "findSum();" value = "Find Sum"> <br> <br>
+			</div>
+		</div>
+		<script type="text/javascript">
+			function findSum() {
+				var arr = [10, 5, 15, 35, 55];
+				var sum = 0;
+				document.getElementById("idInputNumbers").innerHTML = arr
+				for(var i = 0; i < arr.length; i++)
+					sum += arr[i];
+				alert("Sum of Array elements = " + sum)
+			}
+		</script>
+	</body>
+</html>
+<!--
+1. Find Biggest of 3 distinct numbers
+2. Find Biggest of 3 distinct numbers using ternary opr
+3. Find the Month name by using the input number
+4. Find the Factorial of a number
+5. Check if a number is Prime.
+-->

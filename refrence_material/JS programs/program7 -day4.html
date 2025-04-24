@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Day4-Program7</title>
+		
+		<style type="text/css" >
+			@import url("day4-program-designs.css");
+		</style>
+		
+		<script type="text/javascript" src="day4-program7.js">  </script>
+	</head>
+	<body>
+		<h1>Reading data from textbox using textboxes </h1>
+		<form name="studFrm" method="post" action="">
+			<div>
+				<label for="idFirstName">Enter First Name:</label>
+				<input type="text" name="firstName" id="idFirstName">
+			</div>
+			<p style = "display:none;" id="errorMsgFName"> Fisrt Name cannot be Empty </p>
+			<div>
+				<label for="idStudAge">Enter Age:</label>
+				<input type="text" name="studAge" id="idStudAge">
+			</div>
+			<div>
+				<label for="idDateOfBirth">Enter Date of Birth:</label>
+				<input type="text" name="dateOfBirth" id="idDateOfBirth">
+			</div>
+			<div>
+				<input type="button" value="Save Student" onClick="isDataValid();">
+				<input type="submit" value="Post Student" onClick="return isDataValid();">
+				<input type="reset"  value="Reset Form">
+			</div>		
+		</form>
+	</body>
+</html>

@@ -1,0 +1,87 @@
+<!Doctype HTML>
+<html lang="en-US">
+	<head>
+		<title> Calculator </title>
+		<style type = "text/css">
+			@import url("day4-program-designs.css")
+		</style>		
+		<script type="text/javascript">
+			var firstNum = ""
+			var secondNum = ""
+			var operation = ""
+			function doOperation(num1, num2, op) {
+				a = parseInt(num1)
+				b = parseInt(num2)
+				var result = 0;
+				switch(op) {
+					case '+' : result = a + b; break;
+					case '-' : result = a - b; break;
+					case '*' : result = a * b; break;
+					case '/' : result = a / b; break;
+				}
+				return result;
+			}
+			function doCalc(val) {
+				switch(val) {
+					case '+':
+					case '-':
+					case '*':
+					case '/':
+							operation = val;
+							break;
+					case '=':
+						firstNum = doOperation(firstNum, secondNum, operation) + "";
+						secondNum = "";
+						operation = "";
+						break;
+					default:
+						if(operation == "") // if operator is  not chosen
+							firstNum += val; // string concatination
+						else if(operation != '') // if operator is chosen
+							secondNum += val;
+				}
+				calcArea.innerHTML = firstNum + operation + secondNum;
+			}
+			function clearCalc() {
+				firstNum = "";
+				secondNum = "";
+				operation = "";
+				calcArea.innerHTML = "";
+			}
+		</script>
+	</head>
+	<body>
+		<h2 style = "margin-left:180px"> Calculator V2 </h2>
+		<form name="calcForm" method="post" action="google.com" style="text-align:center;">
+			<div>
+				<span id = "calcArea">  </span>
+			</div>
+			<div>
+				<input type="button" value="clear" onclick="clearCalc();">
+				<input style = "margin-left:5px;" type="button" value="/" onclick="doCalc(this.value)">
+			</div>
+			<div>
+				<input type="button" value="7" onclick="doCalc(this.value)">
+				<input type="button" value="8" onclick="doCalc(this.value)">
+				<input type="button" value="9" onclick="doCalc(this.value)">
+				<input type="button" value="*" onclick="doCalc(this.value)">
+			</div>
+			<div>
+				<input type="button" value="4" onclick="doCalc(this.value)">
+				<input type="button" value="5" onclick="doCalc(this.value)">
+				<input type="button" value="6" onclick="doCalc(this.value)">
+				<input type="button" value="-" onclick="doCalc(this.value)">
+			</div>
+			<div>
+				<input type="button" value="1" onclick="doCalc(this.value)">
+				<input type="button" value="2" onclick="doCalc(this.value)">
+				<input type="button" value="3" onclick="doCalc(this.value)">
+				<input type="button" value="+" onclick="doCalc(this.value)">
+			</div>
+			<div>
+				<input type="button" value="0"  onclick = "doCalc(this.value)">
+				<input style = "margin-left:5px;" type = "button" value = "=" onclick="doCalc(this.value)">
+			</div>
+		</form>
+	</body>
+</html>

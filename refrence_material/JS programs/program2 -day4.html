@@ -1,0 +1,58 @@
+<!Doctype html>
+<html lang="en-US">
+	<head>
+		<title> Day4 - Example2 </title>
+		<style>
+			form > div > label {
+				display:block;
+				width:280px;
+			}
+			form > div {
+				margin-bottom: 10px
+			}
+			input[type=text] {
+				padding: 5px;
+				border: 2px solid silver;
+				border-radius: 5px;
+			}
+			input[type=button] {
+				padding: 10px;
+				border: 2px solid cyan;
+				border-radius:15px;
+				width:75px;
+				background-color:orange;
+				color:white;
+				font-weight:bold;
+				font-family:consolas;
+				font-size:18px;
+			}
+		</style>
+		<script type="text/javascript">
+			function readFirstName() {
+				if(idFirstName.value == "") {
+					alert("First Name cannot be empty");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1> DATA VALIDATION PROGRAM1 </h1>
+		<form name = "studForm" method = "post" action = "">
+			<div>
+				<label for="idFirstName"> Enter Student Name: </label>
+				<input type="text" name="firstName" id="idFirstName">
+			</div>
+			<div>
+				<label for="idStudAge"> Enter Student Age: </label>
+				<input type="text" name="studAge" id="idStudAge">
+			</div>
+			<div>
+				<label for="idDoB"> Enter Student DoB: </label>
+				<input type="text" name="dob" id="idDoB">
+			</div>
+			<div>
+				<input type="button" value="Save" onclick="readFirstName();">
+			</div>
+		</form>
+	</body>
+</html>
