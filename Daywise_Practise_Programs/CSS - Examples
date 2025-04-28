@@ -1,0 +1,587 @@
+<!-- Example 1: Basic Selectors and Color -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 1</title>
+  <style>
+    h1 {
+      color: blue;
+    }
+    p {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1>Heading</h1>
+  <p>Paragraph</p>
+</body>
+</html>
+
+<!-- Example 2: Class Selector and Font Size -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 2</title>
+  <style>
+    .highlight {
+      color: red;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <p class="highlight">Important text</p>
+</body>
+</html>
+
+<!-- Example 3: ID Selector and Text Alignment -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 3</title>
+  <style>
+    #centered {
+      text-align: center;
+      color: purple;
+    }
+  </style>
+</head>
+<body>
+  <h2 id="centered">Center Aligned Heading</h2>
+</body>
+</html>
+
+<!-- Example 4: Grouping Selectors and Background Color -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 4</title>
+  <style>
+    h1, h2, p {
+      background-color: lightgray;
+    }
+  </style>
+</head>
+<body>
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <p>Paragraph</p>
+</body>
+</html>
+
+<!-- Example 5: Pseudo-class and Hover Effect -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 5</title>
+  <style>
+    a:hover {
+      color: orange;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <a href="#">Hover over me</a>
+</body>
+</html>
+
+<!-- Example 6: Border and Margin -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 6</title>
+  <style>
+    div {
+      border: 2px solid black;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div>Box with Border and Margin</div>
+</body>
+</html>
+
+<!-- Example 7: Padding and Width -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 7</title>
+  <style>
+    div {
+      padding: 30px;
+      width: 300px;
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+  <div>Box with Padding and Width</div>
+</body>
+</html>
+
+<!-- Example 8: Background Image and Repeat -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 8</title>
+  <style>
+    body {
+      background-image: url('background.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+</body>
+</html>
+
+<!-- Example 9: Font Family and Weight -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 9</title>
+  <style>
+    p {
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <p>Bold Arial Text</p>
+</body>
+</html>
+
+<!-- Example 10: Text Shadow and Letter Spacing -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 10</title>
+  <style>
+    h1 {
+      text-shadow: 2px 2px 5px gray;
+      letter-spacing: 3px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Shadow Text</h1>
+</body>
+</html>
+
+<!-- Example 11: Rounded Corners and Box Shadow -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 11</title>
+  <style>
+    div {
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px gray;
+      padding: 20px;
+      background: pink;
+    }
+  </style>
+</head>
+<body>
+  <div>Rounded and Shadowed Box</div>
+</body>
+</html>
+
+<!-- Example 12: Linear Gradient Background -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 12</title>
+  <style>
+    body {
+      background: linear-gradient(to right, red, yellow);
+    }
+  </style>
+</head>
+<body>
+</body>
+</html>
+
+<!-- Example 13: Transform Rotate -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 13</title>
+  <style>
+    div {
+      transform: rotate(20deg);
+      background-color: skyblue;
+      width: 200px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div>Rotated Box</div>
+</body>
+</html>
+
+<!-- Example 14: Transform Scale -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 14</title>
+  <style>
+    div {
+      transform: scale(1.5);
+      background: lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <div>Scaled Box</div>
+</body>
+</html>
+
+<!-- Example 15: Transition on Hover -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 15</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background: red;
+      transition: background 0.5s;
+    }
+    div:hover {
+      background: blue;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>
+
+<!-- Example 16: Opacity and Visibility -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 16</title>
+  <style>
+    .hidden {
+      opacity: 0.5;
+      visibility: visible;
+    }
+  </style>
+</head>
+<body>
+  <p class="hidden">Faded Text</p>
+</body>
+</html>
+
+<!-- Example 17: Position Absolute -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 17</title>
+  <style>
+    div {
+      position: absolute;
+      top: 50px;
+      left: 100px;
+      background: orange;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div>Absolute Box</div>
+</body>
+</html>
+
+<!-- Example 18: Position Fixed -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 18</title>
+  <style>
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: black;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>Fixed Header</header>
+  <p style="margin-top:100px;">Scroll Down</p>
+</body>
+</html>
+
+<!-- Example 19: Z-Index -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 19</title>
+  <style>
+    div {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+    }
+    #box1 {
+      background: red;
+      z-index: 1;
+    }
+    #box2 {
+      background: blue;
+      top: 30px;
+      left: 30px;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <div id="box1"></div>
+  <div id="box2"></div>
+</body>
+</html>
+
+<!-- Example 20: Overflow and Text Overflow -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 20</title>
+  <style>
+    div {
+      width: 200px;
+      height: 50px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      background: #eee;
+    }
+  </style>
+</head>
+<body>
+  <div>This is a very long text that will be truncated.</div>
+</body>
+</html>
+
+<!-- Example 21: Flexbox - Center Content -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 21</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      background: lightblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p>Centered Text</p>
+  </div>
+</body>
+</html>
+
+<!-- Example 22: Flexbox - Column Layout -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 22</title>
+  <style>
+    .flex-col {
+      display: flex;
+      flex-direction: column;
+      height: 300px;
+      background: lightgray;
+    }
+    .flex-col div {
+      margin: 5px;
+      background: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-col">
+    <div>Item 1</div>
+    <div>Item 2</div>
+  </div>
+</body>
+</html>
+
+<!-- Example 23: Grid Layout -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 23</title>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 10px;
+      background: pink;
+    }
+    .grid div {
+      background: white;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div>Box 1</div>
+    <div>Box 2</div>
+    <div>Box 3</div>
+    <div>Box 4</div>
+  </div>
+</body>
+</html>
+
+<!-- Example 24: Animation Basics -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 24</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background: red;
+      animation: move 3s infinite;
+    }
+    @keyframes move {
+      0% {transform: translateX(0);}
+      50% {transform: translateX(100px);}
+      100% {transform: translateX(0);}
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>
+
+<!-- Example 25: Keyframes Color Animation -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 25</title>
+  <style>
+    p {
+      animation: colorchange 4s infinite;
+    }
+    @keyframes colorchange {
+      0% {color: red;}
+      50% {color: green;}
+      100% {color: blue;}
+    }
+  </style>
+</head>
+<body>
+  <p>Color Changing Text</p>
+</body>
+</html>
+
+<!-- Example 26: Media Queries -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 26</title>
+  <style>
+    body {
+      background: yellow;
+    }
+    @media (max-width: 600px) {
+      body {
+        background: lightblue;
+      }
+    }
+  </style>
+</head>
+<body>
+  <p>Resize the window</p>
+</body>
+</html>
+
+<!-- Example 27: Variables in CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 27</title>
+  <style>
+    :root {
+      --main-color: coral;
+    }
+    div {
+      background: var(--main-color);
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div>CSS Variable Example</div>
+</body>
+</html>
+
+<!-- Example 28: Clip Path -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 28</title>
+  <style>
+    img {
+      clip-path: circle(50% at center);
+    }
+  </style>
+</head>
+<body>
+  <img src="image.jpg" width="200">
+</body>
+</html>
+
+<!-- Example 29: Filter Effects -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 29</title>
+  <style>
+    img {
+      filter: grayscale(100%);
+    }
+  </style>
+</head>
+<body>
+  <img src="image.jpg" width="200">
+</body>
+</html>
+
+<!-- Example 30: Object Fit -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS3 Example 30</title>
+  <style>
+    img {
+      width: 200px;
+      height: 100px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <img src="image.jpg">
+</body>
+</html>

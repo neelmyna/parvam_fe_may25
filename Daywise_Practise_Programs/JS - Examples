@@ -1,0 +1,391 @@
+<!-- Example 1: Data Types -->
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  let str = "Hello";
+  let num = 123;
+  let bool = true;
+  let obj = {name: "John", age: 30};
+  let arr = [1, 2, 3];
+  let und;
+  let nul = null;
+
+  document.write("String: " + typeof str + "<br>");
+  document.write("Number: " + typeof num + "<br>");
+  document.write("Boolean: " + typeof bool + "<br>");
+  document.write("Object: " + typeof obj + "<br>");
+  document.write("Array: " + typeof arr + "<br>");
+  document.write("Undefined: " + typeof und + "<br>");
+  document.write("Null: " + typeof nul + "<br>");
+</script>
+</body>
+</html>
+
+<!-- Example 2: Array Method - Push -->
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  let fruits = ["Apple", "Banana"];
+  fruits.push("Cherry");
+  document.write(fruits);
+</script>
+</body>
+</html>
+
+<!-- Example 3: Array Method - Pop -->
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  let fruits = ["Apple", "Banana", "Cherry"];
+  fruits.pop();
+  document.write(fruits);
+</script>
+</body>
+</html>
+
+<!-- Example 4: Array Method - Shift -->
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  let fruits = ["Apple", "Banana", "Cherry"];
+  fruits.shift();
+  document.write(fruits);
+</script>
+</body>
+</html>
+
+<!-- Example 5: Array Method - Unshift -->
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  let fruits = ["Banana", "Cherry"];
+  fruits.unshift("Apple");
+  document.write(fruits);
+</script>
+</body>
+</html>
+
+<!-- Example 6: Array Method - Slice -->
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  let fruits = ["Apple", "Banana", "Cherry"];
+  let sliced = fruits.slice(1, 3);
+  document.write(sliced);
+</script>
+</body>
+</html>
+
+<!-- Example 7: Array Method - Map -->
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  let numbers = [1, 2, 3, 4];
+  let squared = numbers.map(num => num * num);
+  document.write(squared);
+</script>
+</body>
+</html>
+
+<!-- Example 8: Array Method - Filter -->
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  let numbers = [1, 2, 3, 4, 5];
+  let evenNumbers = numbers.filter(num => num % 2 === 0);
+  document.write(evenNumbers);
+</script>
+</body>
+</html>
+
+<!-- Example 9: Array Method - Reduce -->
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  let numbers = [1, 2, 3, 4];
+  let sum = numbers.reduce((acc, num) => acc + num, 0);
+  document.write(sum);
+</script>
+</body>
+</html>
+
+<!-- Example 10: Condition - If Else -->
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  let age = 18;
+  if (age >= 18) {
+    document.write("Adult");
+  } else {
+    document.write("Minor");
+  }
+</script>
+</body>
+</html>
+
+<!-- Example 11: Condition - Switch -->
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  let day = 3;
+  switch(day) {
+    case 1: document.write("Monday"); break;
+    case 2: document.write("Tuesday"); break;
+    case 3: document.write("Wednesday"); break;
+    default: document.write("Other Day");
+  }
+</script>
+</body>
+</html>
+
+<!-- Example 12: Loop - For -->
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  for (let i = 1; i <= 5; i++) {
+    document.write(i + "<br>");
+  }
+</script>
+</body>
+</html>
+
+<!-- Example 13: Loop - While -->
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  let i = 1;
+  while (i <= 5) {
+    document.write(i + "<br>");
+    i++;
+  }
+</script>
+</body>
+</html>
+
+<!-- Example 14: Loop - Do While -->
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  let i = 1;
+  do {
+    document.write(i + "<br>");
+    i++;
+  } while (i <= 5);
+</script>
+</body>
+</html>
+
+<!-- Example 15: Loop - For In (Object) -->
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  let person = {name: "John", age: 30};
+  for (let key in person) {
+    document.write(key + ": " + person[key] + "<br>");
+  }
+</script>
+</body>
+</html>
+
+<!-- Example 16: Loop - For Of (Array) -->
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  let fruits = ["Apple", "Banana", "Cherry"];
+  for (let fruit of fruits) {
+    document.write(fruit + "<br>");
+  }
+</script>
+</body>
+</html>
+
+<!-- Example 17: Object Creation -->
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  let person = {name: "John", age: 30};
+  document.write(person.name + " is " + person.age + " years old.");
+</script>
+</body>
+</html>
+
+<!-- Example 18: Access Object Property -->
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  let person = {name: "John", age: 30};
+  document.write(person["name"]);
+</script>
+</body>
+</html>
+
+<!-- Example 19: Add Property to Object -->
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  let person = {name: "John", age: 30};
+  person.city = "New York";
+  document.write(person.city);
+</script>
+</body>
+</html>
+
+<!-- Example 20: Delete Property from Object -->
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  let person = {name: "John", age: 30};
+  delete person.age;
+  document.write(person.age);  // undefined
+</script>
+</body>
+</html>
+
+<!-- Example 21: DOM - Change Text Content -->
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo">Old Text</p>
+<script>
+  document.getElementById("demo").textContent = "New Text";
+</script>
+</body>
+</html>
+
+<!-- Example 22: DOM - Change Style -->
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo">Change my color</p>
+<script>
+  document.getElementById("demo").style.color = "blue";
+</script>
+</body>
+</html>
+
+<!-- Example 23: DOM - Add Event Listener -->
+<!DOCTYPE html>
+<html>
+<body>
+<button id="myBtn">Click Me</button>
+<script>
+  document.getElementById("myBtn").addEventListener("click", function() {
+    alert("Button clicked!");
+  });
+</script>
+</body>
+</html>
+
+<!-- Example 24: DOM - Create Element -->
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  let newElement = document.createElement("p");
+  newElement.textContent = "This is a new paragraph.";
+  document.body.appendChild(newElement);
+</script>
+</body>
+</html>
+
+<!-- Example 25: DOM - Remove Element -->
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo">Remove me</p>
+<script>
+  let element = document.getElementById("demo");
+  element.parentNode.removeChild(element);
+</script>
+</body>
+</html>
+
+<!-- Example 26: DOM - Get Input Value -->
+<!DOCTYPE html>
+<html>
+<body>
+<input type="text" id="myInput">
+<button onclick="getInputValue()">Get Value</button>
+<script>
+  function getInputValue() {
+    let value = document.getElementById("myInput").value;
+    alert(value);
+  }
+</script>
+</body>
+</html>
+
+<!-- Example 27: DOM - Set Input Value -->
+<!DOCTYPE html>
+<html>
+<body>
+<input type="text" id="myInput">
+<button onclick="setInputValue()">Set Value</button>
+<script>
+  function setInputValue() {
+    document.getElementById("myInput").value = "Hello, JavaScript!";
+  }
+</script>
+</body>
+</html>
+
+<!-- Example 28: DOM - Toggle Class -->
+<!DOCTYPE html>
+<html>
+<body>
+<button id="toggleBtn">Toggle Color</button>
+<script>
+  document.getElementById("toggleBtn").onclick = function() {
+    document.body.classList.toggle("newColor");
+  };
+</script>
+<style>
+  .newColor { background-color: lightblue; }
+</style>
+</body>
+</html>
+
+<!-- Example 29: Using JSON Methods -->
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  let person = {name: "John", age: 30};
+  let jsonString = JSON.stringify(person);
+  let jsonObj = JSON.parse(jsonString);
+  document.write(jsonObj.name);
+</script>
+</body>
+</html>
+
+<!-- Example 30: Set Timeout -->
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  setTimeout(function() {
+    alert("This is an alert after 3 seconds!");
+  }, 3000);
+</script>
+</body>
+</html>
