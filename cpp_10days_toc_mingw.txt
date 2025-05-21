@@ -1,0 +1,182 @@
+DAY - 1
+
+APP INSTALLATION: (max 2 hours)
+Use of Github
+VS code
+notepad++
+mingw  (C:\MinGW\bin  Add this path to Environment variables)
+git
+
+Core Concepts of Object-Oriented Programming in C++
+1. Introduction to OOP
+Focus on primitive data vs Object (properties)
+int age = 20; // Primitive. This is just a number
+Student student1;
+Here the object student1 will have many details like name, age, semester, branch (Assuming engg student)
+
+2. Difference between Procedural and OOP
+Procedural: Focus on Functions (Solving problems)
+OO: Focus is on the the properties of the Entity (Employee, BankAccount, Student)
+
+We implement properties of an Entity using a class.
+Thus class is a solution for an real life entity such student, product, college,  company, bankAccout, transaction.
+class is implementation of Encapsulation also.
+The purpose of Encapsulation is abstraction.
+When we encapsulate, we achieve abstraction.
+
+Thus Abstraction and Encapsulation are 2 faces of the same coin.
+
+Inheritance: For an existing solution we EXTEND new properties.
+Thus the new solution that we get after inheritance will be more Specialized.
+The child class will only have the new added property.
+But when we create an object of the child class, it will parent class properties + new added child class properties.
+
+Thus, child class object is heavier than parent class object.
+
+Polymorphism: One problem multiple solutions. These multiple solutions will be in heirarchy of classes.
+
+Function overloading came to existance because we may have to define multiple constructors in a class.
+Constructor	is a method in the class which is used to initiale the object. It is called implicitly as soon as an object is created.
+Thus inside the constructor we can always access this reference.
+Copy constructor
+Zero Arg Cons (default)
+All Arg constructor
+
+3. Key OOP Concepts: Class, Object, Encapsulation, Inheritance, Polymorphism,
+4. Abstraction
+5. Basic Structure of C++ Program
+6. Class and Object Syntax
+
+DAY 2
+Comprehensive Guide to Classes and Objects
+1. Defining and Declaring Classes
+2. Access Modifiers: public, private, and protected
+3. Object Instantiation
+4. Scope Resolution Operator (::)
+
+int num = 10;
+int main() {
+  int num = 20;
+  cout<<num; // local num
+  cout<<::num; // global num
+  return 0;
+}
+
+DAY 3
+Understanding Constructors and Destructors
+1. Constructor Basics: Default, Parameterized, and Copy Constructor
+Why a constructor cannot be static and why a constructor has no return type.
+2. Destructor Basics
+3. Constructor Overloading
+
+DAY 4
+Encapsulation and Abstraction
+1. Encapsulation: Hiding data using private and protected
+2. Getters and Setters
+
+getter methods accept no argument and return one value.
+setter methods accept one argument and return no value.
+Usually inside setter methods, we check the conditions before assiging the value to the object.
+3. Abstraction: Hiding Internal Implementation
+The purpose of abstraction is not to hide the details. But to allow the user to use the implementation easily.
+
+DAY 5
+Inheritance in C++
+1. Introduction to Inheritance
+2. 5 Types of Inheritance
+single, multi level (heirarchical), multiple, diamond, tree
+Focus and give coding exmaples only for single and multi level.
+3. Protected Access Modifier in Inheritance (Optional)
+4. Constructor Execution Order in Inheritance (important)
+Students must know that when we create an object of the child class, the parent most class part of the object is constructed 1st and then its immediate child class part object and so on.
+The constructor of the class whose object is created is called 1st.
+Then its immediate parent class constructor is called and so on upto the parent most. Ferom there the constructors are executed.
+
+INITIALIZATION LIST (similar to super keyword in java)
+
+DAY 6
+Polymorphism in C++
+1. Compile-time Polymorphism (Function Overloading)
+2. Initialization list
+3. String class in C++ (And its methods)
+
+DAY 7
+Pointers and Dynamic Memory allocation 
+1. Basics of Pointers
+2. this Pointer
+3. Dynamic Memory Allocation (new and delete) only for Objects and dynamic array.
+4. Pointers to Objects
+
+DAY 8
+File Handling and Exception Handling
+1. File Handling Basics
+2. Reading and Writing to Files
+3. Text based files (.txt) (input.getline(), output.put(), input.get())
+seek() tell() eof() close() open()
+File opening modes
+4. Files with Objects (.dat) (read(), write() )
+
+DAY 9
+Problem Solving and Algorithms 
+1. Linear search
+2. Binary search
+3. Bubble sort
+Hacker Rank Problems
+
+DAY 10
+Mini Project and Revision
+1. Recap of OOP Concepts
+2. Design and Implement a Mini Project (Project Idea: Library Management System)
+3. Implement all CRUD operations using classes.
+4. Handle file I/O to store and retrieve data.
+5. Use exception handling to manage errors effectively.
+
+MINI PROJECT:
+Students will create a class of their own choice of Entity
+
+Student: id, name, semester, branch, averageScore
+
+Employee: id, name, designation, salary, yearsOfExperience
+
+Flight: id, airline, source, destination, duration, fare
+
+Book: id, tiple, author, publisher, price
+
+Mini Project Procedure:
+1. Students will create the enity class with
+Employee class
+	constructors, getter-setter methods, 
+2. Students will create the operations/logic class
+EmployeeOperations
+	CRUD operations on file (file handling)
+3. Student will define the Menu based interface in main() using while loop and switch-case to implement the CRUD operations on the entity that they have implemented.
+
+CRUD Operations:
+	insert one object/record
+	delete one object/record
+	update one object/record
+	search one object/record (search using id)
+	list all objects from file.
+-------------------------------------------------------
+Steps to install mingw:
+Double click on the setup file.
+Click continue/next
+Select the check boxes:
+	1. Developer tools
+	2. mingw32-base
+	3. mingw-32-gcc-g++
+Click Mark for installation
+Then CLick on Inatallation (Left Top corner) -> Click Apply changes
+Then close all the windows of mingw once done
+
+To make the gcc and g++ CLIs (commands/applications) available globally (in any path), add the path where these Apps are available, which is usually (C:/mingw/bin) to the Environment variables:
+
+Copy the path of gcc/g++ -> (C:/mingw/bin)
+
+Search Envi.... -> Edit System Environment Variables -> Click on Environment variables -> double click on path -> click new -> Paste the path here -> Click Ok 3 times
+
+In the C drive or D Drive, create a new folder "learning"
+create a new folder "cprogramming" inside "learning"
+create a new folder "cpp" inside "learning"
+Now go to notepad++ and create a new file (Ctrl+N) type: "C Programming Notes" then say Ctrl+S
+Name the file as "c_notes"
